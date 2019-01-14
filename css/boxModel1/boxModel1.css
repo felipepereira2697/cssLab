@@ -1,0 +1,42 @@
+/*
+    When talking about margin, when two margins collides it does not get added the two values, only the one with greater value should stay
+    for example, if you have two elements one with margin-top: 20px; and another with margin-bottom: 20px it will be only one with 20px;
+*/
+.box1
+{
+    width:160px;
+    height: 400px;
+    padding: 10px;
+    border: 20px solid #FF6347;
+    margin: 20px;
+
+}
+
+.box2
+{
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid #1da1f2;
+    margin:20px;
+}
+
+.holdContent
+{
+    width: 800px;
+    background: #ddd;
+    /*center div*/
+    margin: 0 auto;
+    height: 400px;
+}
+
+.boxContent
+{
+    width: 200px;
+    height: 80px;
+    background: #1da1f2;
+    margin-bottom: 15px;
+    
+    padding:20px;
+    border-left: 12px solid #B26800;
+}
