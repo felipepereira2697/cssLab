@@ -2,13 +2,27 @@
     When talking about margin, when two margins collides it does not get added the two values, only the one with greater value should stay
     for example, if you have two elements one with margin-top: 20px; and another with margin-bottom: 20px it will be only one with 20px;
 */
+*
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+h1
+{
+    text-align: center;
+}
+p
+{
+    font-size: 14px;
+}
 .box1
 {
     width:160px;
     height: 400px;
     padding: 10px;
-    border: 20px solid #FF6347;
+    border: 20px solid #FF9400;
     margin: 20px;
+    float:left;
 
 }
 
@@ -19,15 +33,42 @@
     padding: 5px;
     border: 5px solid #1da1f2;
     margin:20px;
+    float:left;
+}
+
+.box3
+{
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid #009EFF;
+    margin:20px;
+    float:left;
+}
+
+.box4
+{
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid #0C94E8;
+    margin:20px;
+    float:left;
+}
+.boxContainer
+{
+    /*to holdContent margin bottom value works we need to overflow: auto on our container that has some float elements inside it*/
+    overflow: auto;
 }
 
 .holdContent
 {
     width: 800px;
-    background: #ddd;
     /*center div*/
-    margin: 0 auto;
+    margin: 40px 20px;
     height: 400px;
+    clear: both;
+    
 }
 
 .boxContent
@@ -36,7 +77,7 @@
     height: 80px;
     background: #1da1f2;
     margin-bottom: 15px;
-    
+    display: inline-block;
     padding:20px;
-    border-left: 12px solid #B26800;
+    border-left: 12px solid #FF9400;
 }
